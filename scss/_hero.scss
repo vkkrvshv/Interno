@@ -1,0 +1,15 @@
+.block__hero {
+    margin-bottom: 100px;
+    min-height: 1108px;
+    background: center / cover no-repeat url("../images/hero-img.jpg");
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 8.864rem;
+    left: 5.455rem;
+    max-width: 640px;
+    gap: 35px;
+}

@@ -1,0 +1,19 @@
+.block__services {
+    display: flex;
+    max-width: 1200px;
+    gap: 0;
+    margin: 0 auto 100px auto;
+}
+
+.services__card {
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    text-align: center;
+    padding: 79px 41px;
+    gap: 17px;
+}
+
+.services__card__text {
+    margin-bottom: 17px;
+}

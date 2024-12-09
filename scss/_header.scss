@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    padding: 0 120px;
+    max-width: 1920px;
+    height: 106px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img {
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    height: 62px;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 0.909rem;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.burger-checkbox:checked + .burger span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 5px;
+}
+
+.burger-checkbox:checked + .burger span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-checkbox:checked + .burger span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 5px;
+}
+
+.burger-checkbox {
+    position: relative;
+    visibility: hidden;
+    left: 0;
+}
+
+.burger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    bottom: 5px;
+}

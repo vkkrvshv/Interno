@@ -1,0 +1,35 @@
+.block__projects {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto 100px auto;
+}
+
+.projects__description {
+    max-width: 786px;
+    margin: 20px auto 70px auto;
+}
+
+.projects__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 20px;
+    justify-content: space-evenly;
+}
+
+.projects__card {
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.projects__card__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__card__info__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

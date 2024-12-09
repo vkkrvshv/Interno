@@ -1,0 +1,155 @@
+.block__reviews {
+    max-width: 1200px;
+    min-height: 675px;
+    background-color: #F4F0EC;
+    margin: 0 auto 140px auto;
+    padding: 110px 50px;
+    border-radius: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews__title {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 45px auto;
+}
+
+.reviews__card {
+    display: none;
+}
+
+.reviews__card.active {
+    display: block;
+}
+
+.reviews__cards {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.reviews__card {
+    max-width: 354px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 35px 45px;
+    min-height: 264px;
+}
+
+.reviews__card__person__info, .reviews__card__person {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.reviews__card__person__info {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.reviews__card__person__info p {
+    font-size: 0.818rem;
+}
+
+.reviews__card p {
+    font-size: 0.909rem;
+    line-height: 1.364rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.pagination button {
+    background: #292F36;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    margin: 0 4px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination button:disabled {
+    background: #ffffff;
+    color: #292F36;
+    cursor: not-allowed;
+}
+
+#popup-form.hidden, #popup-form-1.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.popup > .popup-content > h3 {
+    color: #292929;
+    text-align: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 0 20px;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#agreement {
+    margin-bottom: 3rem;
+}
+
+label:last-of-type {
+    font-size: 0.8rem;
+    font-weight: normal;
+    height: auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}

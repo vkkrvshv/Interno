@@ -1,0 +1,502 @@
+@import url(../fonts/jost/jost.css);
+@import url(../fonts/dmserif/dmserif.css);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: #292F36;
+}
+
+html {
+    font-size: 22px;
+    font-family: 'jost';
+    letter-spacing: 0.4px;
+    font-weight: 400;
+}
+
+body {
+    background-color: #fff;
+
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3.636rem;
+    font-family: 'dmserif';
+    line-height: 4.318rem;
+    letter-spacing: 0.22px;
+}
+
+h2 {
+    font-size: 2.273rem;
+    font-family: 'dmserif';
+}
+
+h4 {
+    font-size: 1.136rem;
+    font-family: 'dmserif';
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+}
+
+button {
+    border: none;
+    border-radius: 18px;
+    font-size: 0.818rem;
+    letter-spacing: 0.72px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button.main {
+    width: 207px;
+    background-color: #292F36;
+    color: #fff;
+    height: 71px;
+}
+
+.main.gold {
+    background-color: #CDA274;
+}
+
+.active {
+    color: #CDA274;
+}
+
+@import "./header";
+@import "./hero";
+@import "./services";
+@import "./estimate";
+@import "./reviews";
+@import "./partners";
+@import "./projects";
+@import "./statistics";
+@import "./blogs";
+@import "./footer";
+
+/* 375px 576px 1024px 1440px */
+
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .burger, .burger-checkbox {
+        display: none;
+        visibility: hidden;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    .block__hero {
+        min-height: 700px;
+    }
+
+    .hero__text {
+        top: 6rem;
+    }
+
+    .block__estimate, .block__services, .block__partners {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .block__partners {
+        margin-bottom: 160px;
+    }
+
+    .projects__card {
+        max-width: 400px;
+    }
+
+    .image__label {
+        left: 3rem;
+        top: 15.5rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #FFF;
+        width: 100%;
+        height: 240px;
+        border-radius: 0 0 8px 8px;
+        gap: 24px;
+        z-index: 2;
+        padding: 20px 0;
+    }
+
+    .burger {
+        bottom: 10px;
+    }
+
+    .burger-checkbox:checked + .burger span:nth-child(1), .burger-checkbox:checked + .burger span:nth-child(3) {
+        top: -2px;
+    }
+
+    .block__estimate > img {
+        display: none;
+    }
+
+    .block__hero {
+        min-height: 440px;
+        background: no-repeat 45% 70% url("../images/hero-img.jpg");
+    }
+
+    .block__hero, .block__reviews, .footer__container {
+        margin-bottom: 40px;
+    }
+
+    .block__services {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .hero__text {
+        top: 2rem;
+        left: 2rem;
+        max-width: 340px;
+    }
+
+    .block__estimate {
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+
+    .estimate__content {
+        align-items: center;
+    }
+
+    .reviews__card__person img {
+        max-width: 40px;
+    }
+
+    .block__partners {
+        margin-bottom: 160px;
+    }
+
+    .block__projects {
+        padding: 0 40px;
+    }
+
+    .projects__card {
+        text-align: left;
+        max-width: 240px;
+    }
+
+    .projects__card__info__text {
+        justify-content: space-around;
+    }
+
+    .block__statistics {
+        max-width: 1024px;
+        padding: 40px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .statistics__card {
+        max-width: 160px;
+    }
+
+    .blogs__card {
+        max-width: 260px;
+        max-height: 380px;
+    }
+
+    .image__label {
+        top: 10rem;
+    }
+
+    .footer__container {
+        grid-template-areas: "media pages"
+                                "explore contact";
+        gap: 40px;
+        max-width: 1024px;
+        grid-template-columns: auto;
+        padding: 50px 40px;
+    }
+
+    .footerbar {
+        gap: 12px;
+    }
+
+    .authors {
+        margin: 0 auto;
+        max-width: 360px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:576px) {
+    html {
+        font-size: 12px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #FFF;
+        width: 100%;
+        height: 220px;
+        border-radius: 0 0 8px 8px;
+        gap: 24px;
+        z-index: 2;
+        padding: 20px 0;
+    }
+
+    .block__estimate > img {
+        display: none;
+    }
+
+    .block__hero {
+        min-height: 335px;
+        background-size: cover;
+        background: no-repeat 45% 70% url("../images/hero-img.jpg");
+    }
+
+    .block__hero, .block__reviews, .footer__container, .block__estimate, .block__services {
+        margin-bottom: 60px;
+    }
+
+    .block__services {
+        flex-wrap: wrap;
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .hero__text {
+        top: 2rem;
+        left: 2rem;
+        max-width: 340px;
+    }
+
+    .block__estimate {
+        margin: 0 40px 60px 40px;
+        text-align: center;
+    }
+
+    .estimate__content {
+        align-items: center;
+    }
+
+    .reviews__card__person img {
+        max-width: 40px;
+    }
+
+    .block__partners {
+        margin-bottom: 160px;
+    }
+
+    .projects__card {
+        text-align: left;
+        max-width: 192px;
+    }
+
+    .block__statistics {
+        max-width: 576px;
+        padding: 40px;
+        flex-wrap: wrap;
+    }
+
+    .statistics__card {
+        max-width: 160px;
+        border-right: none;
+    }
+
+    .blogs__card {
+        max-width: 192px;
+        max-height: 324px;
+    }
+
+    .image__label {
+        top: 9rem;
+    }
+
+    .footer__container {
+        grid-template-areas: "media pages"
+                                "explore contact";
+        gap: 40px;
+        max-width: 360px;
+        grid-template-columns: auto;
+        padding: 50px 15px;
+    }
+
+    .footerbar {
+        gap: 12px;
+    }
+
+    .authors {
+        margin: 0 auto;
+        max-width: 360px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    header {
+        padding: 0 40px;
+        max-width: 786px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background-color: #FFF;
+        width: 100%;
+        height: 240px;
+        border-radius: 0 0 8px 8px;
+        gap: 24px;
+        z-index: 2;
+        padding: 20px 0;
+    }
+
+    .block__estimate > img {
+        display: none;
+    }
+
+    .block__hero {
+        min-height: 440px;
+        background-size: cover;
+        background: no-repeat 45% 70% url("../images/hero-img.jpg");
+    }
+
+    .block__hero, .block__reviews, .footer__container {
+        margin-bottom: 40px;
+    }
+
+    .block__services {
+        flex-wrap: wrap;
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .hero__text {
+        top: 2rem;
+        left: 2rem;
+        max-width: 340px;
+    }
+
+    .block__estimate, .block__projects {
+        margin: 0 40px 80px 40px;
+        text-align: center;
+    }
+
+    .estimate__content {
+        align-items: center;
+    }
+
+    .reviews__card__person img {
+        max-width: 40px;
+    }
+
+    .block__partners {
+        margin-bottom: 160px;
+    }
+
+    .projects__card {
+        text-align: left;
+        max-width: 300px;
+    }
+
+    .block__statistics {
+        max-width: 768px;
+        padding: 40px;
+        flex-wrap: wrap;
+    }
+
+    .statistics__card {
+        max-width: 300px;
+        border-right: none;
+    }
+
+    .blogs__card {
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    .image__label {
+        top: 14rem;
+    }
+
+    .footer__container {
+        grid-template-areas: "media pages"
+                                "explore contact";
+        gap: 40px;
+        max-width: 786px;
+        grid-template-columns: auto;
+        padding: 50px 40px;
+    }
+
+    .footerbar {
+        gap: 12px;
+    }
+
+    .authors {
+        margin: 0 auto;
+        max-width: 786px;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/burger-menu.js"></script>
+    <script src="./scripts/popup.js"></script>
+    <script src="./scripts/slider-reviews.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="header__img" src="./images/logo.svg" alt="logo">
+        <div class="burger-menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <nav class="navbar">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#blogs">Pages</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="block__hero" id="about">
+        <div class="hero__text">
+            <h1>Let's Create Your Dream Interior</h1>
+            <p>The world needs innovators and problem solvers who turn challenges into greater opportunities.</p>
+            <button class="button main">Get Started</button>
+        </div>
+    </div>
+
+    <div class="block__services" id="services">
+        <div class="services__card">
+            <h4>Interior Design</h4>
+            <p class="services__card__text">Enhancing the interior to achieve a healthier environment for the people using right space.</p>
+            <button class="button link">View More</button>
+        </div>
+        <div class="services__card">
+            <h4>Furniture</h4>
+            <p class="services__card__text">Movable articles that are used to make a room or building suitable for living or working.</p>
+            <button class="button link">View More</button>
+        </div>
+        <div class="services__card">
+            <h4>Flooring</h4>
+            <p class="services__card__text">Thin object any finished material applied over a floor structure to provide a walking surface.</p>
+            <button class="button link">View More</button>
+        </div>
+    </div>
+
+    <div class="block__estimate">
+        <div class="estimate__content">
+            <h2>We Tackle The Most Challenging Designs</h2>
+            <p class="estimate__content__text">The world needs innovators and problem solvers who turn challenges into greater opportunities. We have an insatiable curiosity about transformative trends challenging the status.</p>
+            <div class="phone__info">
+                <img src="./images/phone-icon.png" alt="phone-icon">
+                <div class="phone__text">
+                    <p>012345678</p>
+                    <p>Call Us Anytime</p>
+                </div>
+            </div>
+            <button class="button main" id="estimate-btn">Get Free Estimate</button>
+            <div id="popup-form-1" class="popup hidden">
+                <div class="popup-content">
+                    <span id="close-popup-1" class="close">&times;</span>
+                    <h3>Get Free Estimate</h3>
+                    <form id="contact-form">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" required placeholder="your name">
+            
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com">
+            
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99">
+            
+                        <label>
+                            <input type="checkbox" id="agreement" required>
+                            I agree to the processing of personal data*
+                        </label>
+            
+                        <button type="submit" class="button main gold">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <img src="./images/challenging-design.png" alt="challenging-design-kitchen">
+    </div>
+
+    <div class="block__reviews">
+        <h2 class="reviews__title">What the People Thinks About Interno</h2>
+        <div class="reviews__cards">
+            <div class="reviews__card">
+                <div class="reviews__card__person">
+                    <img src="./images/lisa_img.png" alt="lisa-photo">
+                    <div class="reviews__card__person__info">
+                        <h4>Lisa Clairton</h4>
+                        <p>New York, USA</p>
+                    </div>
+                </div>
+                <p>We selected Interno interior because of rigorous design background & education.</p>
+            </div>
+            <div class="reviews__card">
+                <div class="reviews__card__person">
+                    <img src="./images/david-photo.png" alt="david-photo">
+                    <div class="reviews__card__person__info">
+                        <h4>David Knight</h4>
+                        <p>Sydney, Australia</p>
+                    </div>
+                </div>
+                <p>The team exceeded our expectations and emerged as leaders of our project’s.</p>
+            </div>
+            <div class="reviews__card">
+                <div class="reviews__card__person">
+                    <img src="./images/lisa_photo-1.png" alt="lisa-photo-1">
+                    <div class="reviews__card__person__info">
+                        <h4>Lisa Clairton</h4>
+                        <p>Paris, France</p>
+                    </div>
+                </div>
+                <p>They balanced the architectural vision and the project realities beautifully.</p>
+            </div>
+            <div class="reviews__card">
+                <div class="reviews__card__person">
+                    <img src="./images/Nick.jpg" alt="nick-photo">
+                    <div class="reviews__card__person__info">
+                        <h4>Nick Worris</h4>
+                        <p>Rome, Italy</p>
+                    </div>
+                </div>
+                <p>The team exceeded our expectations and emerged as leaders of our project’s.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block__partners">
+        <img class="partners__logo modern" src="./images/modern-home-logo.png" alt="modern-home-logo">
+        <img class="partners__logo vintage" src="./images/style-vontage-logo.png" alt="style-vintage-interior-logo">
+        <img class="partners__logo brand" src="./images/brand-logo.png" alt="brand-logo">
+        <img class="partners__logo nature" src="./images/nature-home-logo.png" alt="nature-home-logo">
+        <img class="partners__logo classic" src="./images/classic-design-studio-logo.png" alt="classic-design-studio-logo">
+    </div>
+
+    <div class="block__projects">
+        <h2>Recent Projects</h2>
+        <p class="projects__description">With tools to make every part of your process more human and a support team excited to help you, getting started with us never been easier.</p>
+        <div class="projects__cards">
+            <div class="projects__card">
+                <img src="./images/project-1.png" alt="project-photo">
+                <div class="projects__card__info">
+                    <div class="projects__card__info__text">
+                        <h4>Winery Dry Creek Building</h4>
+                        <p>Art Modern</p>
+                    </div>
+                    <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                </div>
+            </div>
+            <div class="projects__card">
+                <img src="./images/project-2.png" alt="project-photo">
+                <div class="projects__card__info">
+                    <div class="projects__card__info__text">
+                        <h4>Creative Workplace Design</h4>
+                        <p>Minimalist</p>
+                    </div>
+                    <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                </div>
+            </div>
+            <div class="projects__card">
+                <img src="./images/project-3.png" alt="project-photo">
+                <div class="projects__card__info">
+                    <div class="projects__card__info__text">
+                        <h4>Bedroom Interior Pot Work</h4>
+                        <p>Modern</p>
+                    </div>
+                    <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                </div>
+            </div>
+            <div class="projects__card">
+                <img src="./images/project-4.png" alt="project-photo">
+                <div class="projects__card__info">
+                    <div class="projects__card__info__text">
+                        <h4>Light Ambience Sepia Design</h4>
+                        <p>Scandinavian</p>
+                    </div>
+                    <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block__statistics">
+        <div class="statistics__card">
+            <span class="number__title">12</span>
+            <p>Years Of Experiance</p>
+        </div>
+        <div class="statistics__card">
+            <span class="number__title">5K</span>
+            <p>Success Project</p>
+        </div>
+        <div class="statistics__card">
+            <span class="number__title">1K</span>
+            <p>Active Project</p>
+        </div>
+        <div class="statistics__card">
+            <span class="number__title">4K</span>
+            <p>Happy Customers</p>
+        </div>
+    </div>
+
+    <div class="block__blogs" id="blogs">
+        <h2>Recent Blogs</h2>
+        <p>Get updates about our latest trends and techniques used in interior design project works.</p>
+        <div class="blogs__cards">
+            <div class="blogs__card">
+                <img src="./images/blog-1.png" alt="blog-kitchen-photo">
+                <div class="image__label">Kitchen Design</div>
+                <div class="blogs__card__info">
+                    <h4>Residential Interior Designer In New York, USA</h4>
+                    <div class="blogs__card__info__text">
+                        <p>November 23, 2021</p>
+                        <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__card">
+                <img src="./images/blog-2.png" alt="blog-livingroom-photo">
+                <div class="image__label">Living Room</div>
+                <div class="blogs__card__info">
+                    <h4>How To Choose The Best Wall Art & Decor House?</h4>
+                    <div class="blogs__card__info__text">
+                        <p>November 23, 2021</p>
+                        <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__card">
+                <img src="./images/blog-3.png" alt="blog-kitchen-photo">
+                <div class="image__label">Minimalist Interior</div>
+                <div class="blogs__card__info">
+                    <h4>Tips To Increase The Interior Value Of Your House</h4>
+                    <div class="blogs__card__info__text">
+                        <p>November 23, 2021</p>
+                        <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__card">
+                <img src="./images/blog-4.png" alt="blog-kitchen-photo">
+                <div class="image__label">Kitchen Design</div>
+                <div class="blogs__card__info">
+                    <h4>Best Solution For Any Office & Business Interior</h4>
+                    <div class="blogs__card__info__text">
+                        <p>November 23, 2021</p>
+                        <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__card">
+                <img src="./images/blog-5.png" alt="blog-livingroom-photo">
+                <div class="image__label">Living Room</div>
+                <div class="blogs__card__info">
+                    <h4>Get Solution For Building Construction Work</h4>
+                    <div class="blogs__card__info__text">
+                        <p>November 23, 2021</p>
+                        <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__card">
+                <img src="./images/blog-6.png" alt="blog-kitchen-photo">
+                <div class="image__label">Minimalist Interior</div>
+                <div class="blogs__card__info">
+                    <h4>Attain The Best Finish For The Kitchen Cabinets</h4>
+                    <div class="blogs__card__info__text">
+                        <p>November 23, 2021</p>
+                        <a href=""><img src="./images/arrow-btn.svg" alt="arrow-button-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block__reviews join" id="contact-us">
+        <h2>Wanna join the interno?</h2>
+        <p>Contact Us & Get a Free Consultation</p>
+        <button class="button main gold" id="contact-btn">Connect With us</button>
+        <div id="popup-form" class="popup hidden">
+            <div class="popup-content">
+                <span id="close-popup" class="close">&times;</span>
+                <h3>Connect With us</h3>
+                <form id="contact-form">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required placeholder="your name">
+        
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com">
+        
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99">
+        
+                    <label>
+                        <input type="checkbox" id="agreement" required>
+                        I agree to the processing of personal data*
+                    </label>
+        
+                    <button type="submit" class="button main gold">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__container">
+            <nav class="footerbar media">
+                <img src="./images/logo.svg" alt="logo">
+                <p>We are the leading architect and interior design firm in the world.</p>
+                <div class="footer__media">
+                    <a href=""><img src="./images/facebook-icon.svg" alt="facebook-icon"></a>
+                    <a href=""><img src="./images/twitter-icon.svg" alt="twitter-icon"></a>
+                    <a href=""><img src="./images/linkedin-icon.svg" alt="linkedin-icon"></a>
+                    <a href=""><img src="./images/inst-icon.svg" alt="instagram-icon"></a>
+                </div>
+            </nav>
+            <nav class="footerbar pages">
+                <h4>Pages</h4>
+                <a class="nav-link" href="#">Style Guide</a>
+                <a class="nav-link" href="#">Protected</a>
+                <a class="nav-link" href="#">Licenses</a>
+                <a class="nav-link" href="#">Changelog</a>
+                <a class="nav-link" href="#">404</a>
+            </nav>
+            <nav class="footerbar explore">
+                <h4>Explore</h4>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Recent Blog</a>
+                <a class="nav-link" href="#">Pricing Plan</a>
+                <a class="nav-link" href="#">Our Projects</a>
+                <a class="nav-link" href="#">Contact Us</a>
+            </nav>
+            <nav class="footerbar contact">
+                <h4>Contact</h4>
+                <p>53, East Birchwood Ave. Brooklyn, New York 11201, USA.</p>
+                <a class="nav-link" href="#">contact@interno.com</a>
+                <a class="nav-link" href="#">(123) 456 - 7890</a>
+            </nav>
+        </div>
+        <div class="footerbar authors">
+            Copyright © Interno | Designed by <div class="active">Victorflow</div> Templates - Powered by <div class="active">Webflow</div>
+        </div>
+    </footer>
+</body>
+</html>

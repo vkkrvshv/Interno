@@ -1,0 +1,24 @@
+.block__estimate {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 140px auto;
+    gap: 77px;
+}
+
+.estimate__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto 0;
+}
+
+.phone__info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.phone__text {
+    display: flex;
+    flex-direction: column;
+}
